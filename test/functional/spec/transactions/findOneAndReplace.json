@@ -80,9 +80,7 @@
               "stmtId": 0,
               "startTransaction": true,
               "autocommit": false,
-              "readConcern": {
-                "level": "snapshot"
-              },
+              "readConcern": null,
               "writeConcern": null
             },
             "command_name": "findAndModify",
@@ -162,8 +160,10 @@
           "name": "startTransaction",
           "arguments": {
             "session": "session0",
-            "writeConcern": {
-              "w": "majority"
+            "options": {
+              "writeConcern": {
+                "w": "majority"
+              }
             }
           }
         },
@@ -212,9 +212,7 @@
               "stmtId": 0,
               "startTransaction": true,
               "autocommit": false,
-              "readConcern": {
-                "level": "snapshot"
-              },
+              "readConcern": null,
               "writeConcern": null
             },
             "command_name": "findAndModify",
