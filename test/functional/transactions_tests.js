@@ -9,7 +9,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const EJSON = require('mongodb-extjson');
 
-// mlaunch init --replicaset --arbiter  --name rs --hostname localhost --port 31000 --binarypath /Users/mbroadst/Downloads/mongodb-osx-x86_64-enterprise-3.7.3-411-g91e4266/bin
+// mlaunch init --replicaset --arbiter  --name rs --hostname localhost --port 31000 --binarypath /Users/mbroadst/Downloads/mongodb-osx-x86_64-enterprise-3.7.3-550-gf7593ed/bin
 
 chai.use(require('chai-subset'));
 chai.config.includeStack = true;
@@ -309,7 +309,7 @@ function extractBulkRequests(requests) {
  * @param {Object} context a context object containing sessions used for the test
  */
 function testOperation(operation, obj, context) {
-  // console.log('testing operation: ', operation.name);
+  console.log('testing operation: ', operation.name);
 
   const opOptions = {};
   const args = [];
